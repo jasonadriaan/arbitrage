@@ -134,7 +134,7 @@
 
                         axios.get('https://api.mybitx.com/api/1/ticker?pair=XBTZAR')
                             .then(function (response) {
-                                self.luno = response.data.last_trade;
+                                self.luno = parseFloat(response.data.last_trade);
                             })
                             .catch(function (error) {
                                 console.log(error);
