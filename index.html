@@ -132,9 +132,9 @@
                                 console.log(error);
                             });
 
-                        axios.get('https://api.mybitx.com/api/1/ticker?pair=XBTZAR')
+                        axios.get('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=ZAR&e=Luno')
                             .then(function (response) {
-                                self.luno = parseFloat(response.data.last_trade);
+                                self.luno = response.data.last_trade;
                             })
                             .catch(function (error) {
                                 console.log(error);
