@@ -16,24 +16,6 @@
     <!-- CSS -->
     <link href="/app.css" rel="stylesheet">
     
-    <script type="text/javascript">
-      window.MemberfulOptions = {site: "https://arbitrageguide.memberful.com"};
-
-      (function() {
-        var s   = document.createElement('script');
-
-        s.type  = 'text/javascript';
-        s.async = true;
-        s.src   = 'https://d35xxde4fgg0cx.cloudfront.net/assets/embedded.js';
-
-        setup = function() { window.MemberfulEmbedded.setup(); }
-
-        s.addEventListener("load", setup, false);
-
-        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-      })();
-    </script>
-
 </head>
 <body class="text-center">
     <div>
@@ -41,9 +23,6 @@
         <!-- Main Content -->
         <home :user="user" inline-template>
             <div class="container">
-                <a href="https://arbitrageguide.memberful.com/checkout?plan=26109">Buy Sample Plan for $25/month.</a> <br>
-                <a href="https://arbitrageguide.memberful.com/account"> account / sign in </a> <br>
-                <a href="https://arbitrageguide.memberful.com/auth/sign_out"> sign out </a> <br>
                 <!-- Application Dashboard -->
                 <div class="row">
                     <div class="text-center"><img src="/logo.png" style="height: 80px; margin: 30px;"></div>
