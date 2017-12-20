@@ -134,7 +134,7 @@
 
                         axios.get('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=ZAR&e=Luno')
                             .then(function (response) {
-                                self.luno = response.data.last_trade;
+                                self.luno = response.data.ZAR;
                             })
                             .catch(function (error) {
                                 console.log(error);
